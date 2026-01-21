@@ -145,6 +145,8 @@ SistemaIdentificacao
 
 ## 📊 Diagrama UML
 
+<img width="3487" height="7205" alt="Untitled diagram-2026-01-21-013956" src="https://github.com/user-attachments/assets/5f053686-55cd-4263-9af5-e63c94844aab" />
+
 O sistema segue o seguinte diagrama de classes:
 
 ```
