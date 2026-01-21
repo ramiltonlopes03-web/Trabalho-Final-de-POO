@@ -147,62 +147,7 @@ SistemaIdentificacao
 
 O sistema segue o seguinte diagrama de classes:
 
-```[UplclassDiagram
-    class ClassificacaoTaxonomica {
-        -str reino
-        -str divisao
-        -str classe
-        -str ordem
-        -str familia
-        -str genero
-        -str especie
-        +__init__(reino, divisao, classe, ordem, familia, genero, especie)
-        +obter_nome_cientifico() str
-        +obter_classificacao_completa() dict
-        +__str__() str
-    }
-
-    class Planta {
-        -str nome_popular
-        -ClassificacaoTaxonomica classificacao
-        -str descricao
-        -list~str~ caracteristicas
-        -str habitat
-        -str status_conservacao
-        +__init__(nome_popular, classificacao, descricao, caracteristicas, habitat, status_conservacao)
-        +exibir_informacoes() str
-        +adicionar_caracteristica(caracteristica) void
-        +verificar_familia(familia) bool
-        +__str__() str
-    }
-
-    class BiomaCaatinga {
-        -str nome
-        -list~Planta~ plantas
-        -str descricao
-        +__init__(nome, descricao)
-        +adicionar_planta(planta) void
-        +listar_plantas() list
-        +buscar_por_nome_popular(nome) Planta
-        +buscar_por_familia(familia) list~Planta~
-        +contar_plantas() int
-        +gerar_relatorio() str
-    }
-
-    class SistemaIdentificacao {
-        -BiomaCaatinga bioma
-        -dict~str,Planta~ catalogo
-        +__init__(bioma)
-        +cadastrar_planta(planta) void
-        +identificar_por_caracteristicas(caracteristicas) list~Planta~
-        +listar_familias() set
-        +obter_estatisticas() dict
-        +exportar_dados() str
-    }
-
-    Planta --> ClassificacaoTaxonomica : possui
-    BiomaCaatinga o-- Planta : contém
-    SistemaIdentificacao --> BiomaCaatinga : gerenciaoading uml_plantas_ceara.mermaid…]()
+```
 
 ┌─────────────────────────────────┐
 │   ClassificacaoTaxonomica       │
